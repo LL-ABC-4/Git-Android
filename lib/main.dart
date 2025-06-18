@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'features/login/login_page.dart';
+import 'features/login/regist_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -69,6 +70,16 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
               onPressed: _goToLoginPage,
               child: const Text('로그인'),
+            ),
+            // 로그인 페이지 이동 버튼
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => RegistPage()),
+                );
+              },
+              child: const Text('회원 가입'),
             ),
           ],
         ),
