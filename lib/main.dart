@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'features/login/login_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -37,9 +39,15 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _goToLoginPage() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => LoginPage()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -55,7 +63,13 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            const SizedBox(height: 34), // 여백 추가
+            const SizedBox(height: 24), // 여백 추가
+
+            // 로그인 페이지 이동 버튼
+            ElevatedButton(
+              onPressed: _goToLoginPage,
+              child: const Text('로그인 페이지로 이동'),
+            ),
           ],
         ),
       ),
