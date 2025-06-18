@@ -81,6 +81,16 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               child: const Text('회원 가입'),
             ),
+            // 로그인 페이지 이동 버튼
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => RegistPage()),
+                );
+              },
+              child: const Text('회원 가입'),
+            ),
           ],
         ),
       ),
