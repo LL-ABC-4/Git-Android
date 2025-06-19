@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
               onPressed: _goToLoginPage,
 
-              child: const Text('로그인'),
+              child: const Text('Sign In'),
 
             ),
             // 로그인 페이지 이동 버튼
