@@ -1,7 +1,3 @@
 # git revert test
 
 1. first commit
-
-2. send commit - modified
-
-3. third commit
