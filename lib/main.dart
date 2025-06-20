@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
               onPressed: _goToLoginPage,
 
-              child: const Text('Sign In'),
+              child: const Text('SignIn'),
 
             ),
             // 로그인 페이지 이동 버튼
@@ -81,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 MaterialPageRoute(builder: (context) => RegistPage()),
                 );
               },
-              child: const Text('Regist'),
+              child: const Text('SignUp'),
             ),
             // 로그인 페이지 이동 버튼
             ElevatedButton(
